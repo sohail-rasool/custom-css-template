@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+:root{
+  --theme-color:#d7a327;
+}
+
 img {
   max-width: 100%;
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
 }
 
 .container {
