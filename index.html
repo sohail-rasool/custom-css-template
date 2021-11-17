@@ -16,26 +16,33 @@
   <!-- Style css -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <style>
-    .col {
-      background: #ccc;
-      padding: 1em 0;
-      text-align: center;
-    }
-  </style>
 
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-          col-md-6
+      <div class="col-12">
+        <div class="keyboard-options">
+          Sound
+          <select ID="sound">
+            <option value="0" selected>Keyboard</option>
+            <option value="1">Organ</option>
+              <option value="2">Acoustic Guitar</option>
+              <option value="3">EDM, bro!</option>
+          </select>
+          <div ID="keyboard" class="keyboard-holder"></div>
+          <div class="keyboard-options">
+          Range [C<span ID="OCTAVE_LOWER">3</span>-B<span ID="OCTAVE_UPPER">5</span>]
+          <input type="button" ID="-_OCTAVE" value="-" />
+          <input type="button" ID="+_OCTAVE" value="+" /><br />
+          <i>(Use left/right arrows to adjust with keyboard)</i>
+          </div>
       </div>
-      <div class="col-md-6">
-        col-md-6
-    </div>
     </div>
   </div>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/audiosynth.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
