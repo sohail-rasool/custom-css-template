@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 :root {
-  --theme-color: #d7a327;
+  --body-bg: rgb(244,248,250);
+  --primary-color:rgb(46,118,234);
+  --green-btn:rgb(20,227,154);
 }
 
 img {
@@ -14,13 +17,78 @@ img {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAM0lEQVQIW2P8DwQMMPDwIAODvD2YxwiXQBJESKAJQiQeHPgP0w43EsUoZFGgCQg70BwAANTgIZHym5jNAAAAAElFTkSuQmCC') repeat;
+  font-size: 16px;
+  background: var(--body-bg);
 }
 
 
 b {
   font-weight: bold;
 }
+
+/* Header css start */
+.header {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+.header .logo {
+  color: white;
+  font-size: 2rem;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-wrapper a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+.header .btn-signIn {
+  background-color: var(--green-btn);
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Header css end */
+
+/* body css start */
+.top-wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-wrapper .setting-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.timer-block {
+  border-radius: 8px;
+  background-color: var(--green-btn);
+  padding: 10px;
+  color: white;
+  display: inline-block;
+}
+.action-wrapper {
+  margin-top: 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  display: flex;
+  margin: auto;
+}
+/* body css end */
+
+
+
 
 .key {
   position: absolute;
